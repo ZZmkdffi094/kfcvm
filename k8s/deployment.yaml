@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: krsxt
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: krsxt
+  template:
+    metadata:
+      labels:
+        app: krsxt
+    spec:
+      containers:
+      - image: okteto.dev/krsxt:latest
+        name: krsxt
+        ports:
+        - containerPort: 8080
+        env:
+        - name: PORT
+          value: "8080"
+        - name: Site
+          value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
+        - name: Vless_UUID
+          value: "9bca2f47-0938-4854-95ad-6e02abb55a50"
+        - name: Vless_Path
+          value: "/kytfbsknygrdx"
+        - name: Vmess_UUID
+          value: "9bca2f47-0938-4854-95ad-6e02abb55a50"
+        - name: Vmess_Path
+          value: "/rexcvnkdwzkhotx"
+        - name: Share_Path
+          value: "/v2link"
