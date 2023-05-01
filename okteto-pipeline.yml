@@ -1,3 +1,3 @@
 deploy:
-  - okteto build -t okteto.dev/wedxk:latest
+  - okteto build -t okteto.dev/rsxfk:latest
   - kubectl apply -f k8s
