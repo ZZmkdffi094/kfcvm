@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: rsxfk
+  name: pfbvk
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: rsxfk
+      app: pfbvk
   template:
     metadata:
       labels:
-        app: rsxfk
+        app: pfbvk
     spec:
       containers:
-      - image: okteto.dev/rsxfk:latest
-        name: rsxfk
+      - image: okteto.dev/pfbvk:latest
+        name: pfbvk
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: Site
           value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
         - name: Vless_UUID
-          value: "65e05e05-1978-47a6-8a5e-50e5bac161b5"
+          value: "d7d1b2a5-0894-44db-9bb2-32f650e0e090"
         - name: Vless_Path
-          value: "/ygcfrszmygrdx"
+          value: "/wdxcmszmygrdx"
         - name: Vmess_UUID
-          value: "65e05e05-1978-47a6-8a5e-50e5bac161b5"
+          value: "d7d1b2a5-0894-44db-9bb2-32f650e0e090"
         - name: Vmess_Path
-          value: "/potfcedxrzkhotx"
+          value: "/dcbjkedxrzkhotx"
         - name: Share_Path
           value: "/v2link"
