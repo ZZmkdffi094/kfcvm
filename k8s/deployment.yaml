@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: wedxk
+  name: rsxfk
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: wedxk
+      app: rsxfk
   template:
     metadata:
       labels:
-        app: wedxk
+        app: rsxfk
     spec:
       containers:
-      - image: okteto.dev/wedxk:latest
-        name: wedxk
+      - image: okteto.dev/rsxfk:latest
+        name: rsxfk
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: Site
           value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
         - name: Vless_UUID
-          value: "5e6a3929-6153-46eb-87b0-c4e45599ffb6"
+          value: "65e05e05-1978-47a6-8a5e-50e5bac161b5"
         - name: Vless_Path
-          value: "/kytdeszmygrdx"
+          value: "/ygcfrszmygrdx"
         - name: Vmess_UUID
-          value: "5e6a3929-6153-46eb-87b0-c4e45599ffb6"
+          value: "65e05e05-1978-47a6-8a5e-50e5bac161b5"
         - name: Vmess_Path
-          value: "/kemkgvdxrzkhotx"
+          value: "/potfcedxrzkhotx"
         - name: Share_Path
           value: "/v2link"
