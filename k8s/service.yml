@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: rsxfk
+  name: pfbvk
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "rsxfk"
+  - name: "pfbvk"
     port: 8080
   selector:
-    app: rsxfk
+    app: pfbvk
